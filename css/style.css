@@ -32,24 +32,24 @@ header {
 /*------------------------*/
 
 .burger{
-    background: url(/resource/header/burger.svg) no-repeat center left;
+    background: url(resource/header/burger.svg) no-repeat center left;
 }
 .repair {
-    background: url(/resource/header/repair.svg) no-repeat center left;
+    background: url(resource/header/repair.svg) no-repeat center left;
 }
 .check-status {
-    background: url(/resource/header/checkstatus.svg) no-repeat center left;
+    background: url(resource/header/checkstatus.svg) no-repeat center left;
 }
 .call{
-    background: url(/resource/header/call.svg) no-repeat center left;
+    background: url(resource/header/call.svg) no-repeat center left;
     display: none;
 }
 .chat{
-    background: url(/resource/header/chat.svg) no-repeat center left;
+    background: url(resource/header/chat.svg) no-repeat center left;
     display: none;
 }
 .profile{
-    background: url(/resource/header/profile.svg) no-repeat center left;
+    background: url(resource/header/profile.svg) no-repeat center left;
     display: none;
 }
 .header-right{
@@ -90,7 +90,7 @@ header {
     margin-bottom: 24px;
 }
 h1{
-    background: url(/resource/highlight.svg) no-repeat left center/0.2em 1.5em;
+    background: url(resource/highlight.svg) no-repeat left center/0.2em 1.5em;
     padding: 5% 3%;
 }
 .content_body{
