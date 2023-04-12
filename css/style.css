@@ -81,19 +81,13 @@ header {
     background-color: #F8F8F8;
     flex-direction: column;
 }
-.header-pseudo{
-    display: flex;
-    align-items: center;
-    height: 40px;
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
+
 .header-pseudo__elem{
     display: none;
 }
 h1{
     background: url(../resource/highlight.svg) no-repeat left center/0.2em 1.5em;
-    padding: 5% 3%;
+    padding: 12px 15px;
 }
 .content-body{
     display: flex;
@@ -201,6 +195,9 @@ h1{
     .header-pseudo__elem{
         display: flex;
         margin-left: auto;
+        position: absolute;
+        top: 4%;
+        right:3%;
     }
     .header-pseudo__elem label{
         display: flex;
