@@ -162,8 +162,6 @@ h1{
     .content-body{
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 5%;
-        margin-bottom: 5%;
     }
     .content-body__text{
         width: 50%;
