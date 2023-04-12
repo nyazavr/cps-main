@@ -32,25 +32,25 @@ header {
 }
 /*------------------------*/
 
-.burger{
+.header__burger{
     background-image: url(../resource/header/burger.svg);
     background-color: #ffffff;
 }
-.repair {
+.header__repair {
     background: url(../resource/header/repair.svg) no-repeat center left;
 }
-.check-status {
+.header__check-status {
     background: url(../resource/header/checkstatus.svg) no-repeat center left;
 }
-.call{
+.header__call{
     background: url(../resource/header/call.svg) no-repeat center left;
     display: none;
 }
-.chat{
+.header__chat{
     background: url(../resource/header/chat.svg) no-repeat center left;
     display: none;
 }
-.profile{
+.header__profile{
     background: url(../resource/header/profile.svg) no-repeat center left;
     display: none;
 }
@@ -73,9 +73,6 @@ header {
     margin-right: 12px;
     margin-left: 12px;
 }
-.header-pseudo-elem{
-    display: none;
-}
 
 
 
@@ -84,58 +81,74 @@ header {
     background-color: #F8F8F8;
     flex-direction: column;
 }
-.header__pseudo{
-    display: none;
+.header-pseudo{
+    display: flex;
     align-items: center;
     height: 40px;
     margin-top: 24px;
     margin-bottom: 24px;
 }
+.header-pseudo__elem{
+    display: none;
+}
 h1{
     background: url(../resource/highlight.svg) no-repeat left center/0.2em 1.5em;
     padding: 5% 3%;
 }
-.content_body{
+.content-body{
     display: flex;
     flex-direction: column;
+    align-items:flex-start;
 }
-.content-nav{
+
+.content__nav{
     display: flex;
     flex-wrap: nowrap;
     margin-left: 3%;
-    overflow:hidden;
     overflow-x: scroll;
+    background: linear-gradient(270deg, #F8F8F8 0%, #f8f8f800 100%);
 }
-.content-nav::-webkit-scrollbar {
+.content__nav::-webkit-scrollbar {
     width: 0;
 }
+
 .nav-elem{
     font-size: 16px;
     font-family: 'TT Lakes';
     padding-left: 3%;
     padding-right: 3%;
     height: 40px;
+    margin-left: 1%;
+    border: none;
+    background: rgba(0,0,0,0);
+}
+.nav-elem:hover{
     background: #FFFFFF;
     border: 2px #B8FFEC solid;
     border-radius: 3px;
-    margin-left: 1%;
 }
-.content_body_text{
+.content-body__text{
+    display: flex;
+    flex-direction: column;
     margin-left: 3%;
     margin-right: 3%;
+    overflow:hidden;
+    max-height: 150px;
 }
-.read-more{
-    margin-top: 1%;
+.content-body__text p{
+    overflow:hidden;
+}
+.content-body__read-more{
     display: flex;
     align-items: center;
 }
-.read-more span{
+.content-body__read-more span{
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
     font-weight:600;
 }
-.content_body_img{
+.content-body__img{
     margin-top: 5%;
     overflow:hidden;
     display: flex;
@@ -146,27 +159,30 @@ h1{
 /*-----------media-768--------------*/
 
 @media (min-width: 768px) {
-    .content_body{
+    .content-body{
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
-    }
-    .content_body_text{
-        width: 50%;
-    }
-    .content_body_img{
         margin-top: 5%;
         margin-bottom: 5%;
+    }
+    .content-body__text{
+        width: 50%;
+        max-height: 200px;
+    }
+    .content-body__img{
+        margin: 0px;
         margin-right: 3%;
         width: 50%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px ;
     }
-    .call{
+    .header__call{
         display: flex;
     }
-    .chat{
+    .header__chat{
         display: flex;
     }
-    .profile{
+    .header__profile{
         display: flex;
     }
     .header-left .divader{
@@ -182,11 +198,15 @@ h1{
     header{
         display: none;
     }
-    .header-pseudo-elem{
+    .content__nav{
+        overflow: visible;
+        flex-wrap: wrap;
+    }
+    .header-pseudo__elem{
         display: flex;
         margin-left: auto;
     }
-    .header-pseudo-elem label{
+    .header-pseudo__elem label{
         display: flex;
         align-items: center;
         font-weight:600;
