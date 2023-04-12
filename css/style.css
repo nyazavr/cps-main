@@ -196,7 +196,7 @@ h1{
         display: flex;
         margin-left: auto;
         position: absolute;
-        top: 4%;
+        top: 3%;
         right:3%;
     }
     .header-pseudo__elem label{
