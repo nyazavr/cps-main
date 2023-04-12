@@ -84,8 +84,8 @@ header {
     background-color: #F8F8F8;
     flex-direction: column;
 }
-.header-pseudo{
-    display: flex;
+.header__pseudo{
+    display: none;
     align-items: center;
     height: 40px;
     margin-top: 24px;
