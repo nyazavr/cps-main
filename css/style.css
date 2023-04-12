@@ -4,6 +4,7 @@ html, body{
     line-height: 18px;
     letter-spacing: 0.2px;
     color: #1B1C21;
+    margin: 0px;
 }
 header {
     display: flex;
