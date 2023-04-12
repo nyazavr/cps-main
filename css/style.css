@@ -54,19 +54,19 @@ header {
     background: url(../resource/header/profile.svg) no-repeat center left;
     display: none;
 }
-.header-right{
+.header__right{
     display: flex;
     align-items: center;
 }
-.header-right label{
+.header__right label{
     display: none;
 }
-.header-left{
+.header__left{
     display: flex;
     align-items: center;
     margin-left: 1%;
 }
-.header-left .divader{
+.header__left .divader{
     display: none;
 }
 .divader{
