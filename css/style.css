@@ -23,8 +23,6 @@ header {
     width: 40px;
     height: 40px;
     border: none;
-    margin-left: 8px;
-    margin-right: 8px;
 }
 .logo {
     margin-left: 8px;
@@ -37,21 +35,21 @@ header {
     background-color: #ffffff;
 }
 .header__repair {
-    background: url(../resource/header/repair.svg) no-repeat center left;
+    background: url(../resource/header/repair.svg) no-repeat center center;
 }
 .header__check-status {
-    background: url(../resource/header/checkstatus.svg) no-repeat center left;
+    background: url(../resource/header/checkstatus.svg) no-repeat center center;
 }
 .header__call{
-    background: url(../resource/header/call.svg) no-repeat center left;
+    background: url(../resource/header/call.svg) no-repeat center center;
     display: none;
 }
 .header__chat{
-    background: url(../resource/header/chat.svg) no-repeat center left;
+    background: url(../resource/header/chat.svg) no-repeat center center;
     display: none;
 }
 .header__profile{
-    background: url(../resource/header/profile.svg) no-repeat center left;
+    background: url(../resource/header/profile.svg) no-repeat center center;
     display: none;
 }
 .header__right{
@@ -68,6 +66,14 @@ header {
 }
 .header__left .divader{
     display: none;
+}
+.header__left .header-button{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.header__right .header-button{
+    margin-left: 8px;
+    margin-right: 8px;
 }
 .divader{
     margin-right: 12px;
