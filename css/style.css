@@ -95,11 +95,13 @@ h1{
     font-family: 'TT Lakes';
     padding-left: 3%;
     padding-right: 3%;
+    padding-top: 7px;
     height: 40px;
     margin-left: 1%;
     border: none;
     background: rgba(0,0,0,0);
     white-space: nowrap;
+    text-align: center;
 }
 .nav-elem:hover{
     background: #FFFFFF;
