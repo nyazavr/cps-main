@@ -77,7 +77,7 @@ h1{
 }
 .content-body{
     display: flex;
-
+    flex-direction:column;
 }
 .content__nav{
     display: flex;
