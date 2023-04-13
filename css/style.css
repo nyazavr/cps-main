@@ -78,6 +78,7 @@ h1{
 .content-body{
     display: flex;
     flex-direction:column;
+    margin-bottom: 30px;
 }
 .content__nav{
     display: flex;
