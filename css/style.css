@@ -158,24 +158,12 @@ header {
     margin-left: 6px;
     margin-right: 6px;
 }
-.expand::before{
+.expand::before,.expand::after{
     content: "";
     border: solid #41F6D7;
     border-width: 0 3px 3px 0;
     padding: 3px;
     z-index: 10;
-    border-top-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    transform: rotate(45deg);
-    transform: rotate(45deg);
-    
-}
-.expand::after{
-    content: "";
-    z-index: 9;
-    border: solid #41F6D7;
-    border-width: 0 3px 3px 0;
-    padding: 3px;
     border-top-right-radius: 3px;
     border-bottom-left-radius: 3px;
     transform: rotate(45deg);
