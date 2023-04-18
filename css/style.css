@@ -93,11 +93,13 @@ header {
 .a-head__right{
     display: none;
 }
+.content__body{
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
 .content-body{
     display: flex;
     flex-direction:column;
-    margin-bottom: 16px;
-    margin-top: 16px;
 }
 .content__nav{
     display: flex;
@@ -112,15 +114,17 @@ header {
 .nav-elem{
     font-size: 16px;
     font-family: 'TT Lakes';
+    border: none;
+    background: rgba(0,0,0,0);
+    white-space: nowrap;
+    text-align: center;
+}
+.content__nav-elem{
     padding-left: 3%;
     padding-right: 3%;
     padding-top: 7px;
     height: 40px;
     margin-left: 1%;
-    border: none;
-    background: rgba(0,0,0,0);
-    white-space: nowrap;
-    text-align: center;
 }
 .nav-elem:hover{
     background: #FFFFFF;
